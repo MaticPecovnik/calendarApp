@@ -1,0 +1,14 @@
+.header {
+  background-color: rgb(139, 16, 155);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.headerButton {
+  padding: 1rem;
+  font-size: larger;
+  color: white;
+  background-color: rgb(139, 16, 155);
+}

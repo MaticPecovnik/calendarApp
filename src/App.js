@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import "./App.css";
+import Header from "./Components/Header";
+import Event from "./Components/Event";
+import Calendar from "./Components/Calendar";
+
+import { EVENT_VIEW, CALENDAR_VIEW } from "./Reducers/types";
+import { connect } from "react-redux";
+
+const App = ({ view }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Header />
+      {view.eventView && <Event />}
+      {view.calendarView && <Calendar />}
+    </React.Fragment>
   );
-}
+};
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    view: state.viewReducer
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    goToEventView: () => {
+      dispatch({ type: EVENT_VIEW });
+    },
+    goToCalenderView: () => {
+      dispatch({ type: CALENDAR_VIEW });
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
