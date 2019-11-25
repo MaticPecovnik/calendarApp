@@ -1,26 +1,27 @@
 import React from "react";
 
 import "./App.css";
-import Header from "./Components/Header";
-import Event from "./Components/Event";
-import Calendar from "./Components/Calendar";
+import Header from "./Containers/Header";
+import Event from "./Containers/Event";
+import CalendarView from "./Components/CalendarView";
 
 import { EVENT_VIEW, CALENDAR_VIEW } from "./Reducers/types";
 import { connect } from "react-redux";
 
-const App = ({ view }) => {
+const App = props => {
   return (
     <React.Fragment>
       <Header />
-      {view.eventView && <Event />}
-      {view.calendarView && <Calendar />}
+      {props.view.eventView && <Event />}
+      {props.view.calendarView && <CalendarView events={props.events.events} />}
     </React.Fragment>
   );
 };
 
 const mapStateToProps = state => {
   return {
-    view: state.viewReducer
+    view: state.viewReducer,
+    events: state.createEventReducer
   };
 };
 const mapDispatchToProps = dispatch => {

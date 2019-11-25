@@ -1,0 +1,7 @@
+.event_color__container {
+  width: 80%;
+  margin-left: 10%;
+  height: 1.5vh;
+  border: 1px solid black;
+  border-radius: 20px;
+}

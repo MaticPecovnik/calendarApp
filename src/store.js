@@ -1,11 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { logger } from "redux-logger";
-import viewReducer from "./Reducers/reducers";
+import { viewReducer, createEventReducer } from "./Reducers/reducers";
 
 const store = createStore(
-  combineReducers({ viewReducer }),
-  {},
+  combineReducers({ viewReducer, createEventReducer }),
   applyMiddleware(logger)
 );
+
+//store.subscribe(() => console.log(store.getState()));
 
 export default store;

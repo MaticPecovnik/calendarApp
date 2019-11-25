@@ -1,0 +1,15 @@
+.event__container {
+  display: flex;
+  border: 5px solid rgb(139, 16, 155);
+  padding: 3rem;
+  width: 30vw;
+  margin-left: 30vw;
+  margin-top: 10vh;
+  place-content: center;
+}
+
+.eventCreator {
+  font-weight: bold;
+  font-size: x-large;
+  padding: 2rem;
+}

@@ -1,0 +1,17 @@
+.calendar_view__container {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 60vw 30vw;
+  grid-template-rows: 100%;
+  grid-template-areas: "calendar events";
+  grid-column-gap: 5vw;
+}
+
+.calendar__container {
+  grid-area: calendar;
+  margin-left: 5vw;
+}
+
+.next_events__container {
+  grid-area: events;
+}

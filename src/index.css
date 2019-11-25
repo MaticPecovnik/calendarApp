@@ -18,6 +18,7 @@ code {
   background-color: rgb(139, 16, 155);
   border: none;
   cursor: pointer;
+  color: white;
 }
 
 .btn:hover,
