@@ -2,7 +2,7 @@ import React from "react";
 import "./Calendar.css";
 
 const Calendar = props => {
-  return <div className="calendar_view__container"></div>;
+  return <React.Fragment></React.Fragment>;
 };
 
 export default Calendar;

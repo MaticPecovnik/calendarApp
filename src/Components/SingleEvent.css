@@ -1,7 +1,24 @@
-.event_color__container {
-  width: 80%;
-  margin-left: 10%;
-  height: 1.5vh;
+.single_event__container {
+  margin-top: 0.5rem;
+  border: 2px solid rgb(139, 16, 155);
+  border-radius: 20px;
+  background-color: white;
+}
+
+.category_color__container {
+  height: 0.25vw;
+  width: 20vw;
+  margin-top: 1.2vw;
+  margin-bottom: 1.2vw;
   border: 1px solid black;
   border-radius: 20px;
+}
+
+.event_title {
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+.event_description {
+  font-size: 1.05vw;
 }

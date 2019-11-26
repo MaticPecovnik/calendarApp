@@ -1,17 +1,25 @@
 .calendar_view__container {
+  position: relative;
   display: grid;
   width: 100vw;
-  grid-template-columns: 60vw 30vw;
+  grid-template-columns: 65vw 30vw;
   grid-template-rows: 100%;
   grid-template-areas: "calendar events";
-  grid-column-gap: 5vw;
+  grid-column-gap: 1.66vw;
 }
 
 .calendar__container {
   grid-area: calendar;
-  margin-left: 5vw;
+  margin-left: 1.33%;
+  position: fixed;
+  background-color: rgba(65, 65, 65, 0.15);
+  width: 65%;
+  height: 77vh;
+  top: 17vh;
 }
 
 .next_events__container {
   grid-area: events;
+  position: relative;
+  margin-top: 7vw;
 }

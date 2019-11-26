@@ -39,15 +39,39 @@ const initial_events = [
   },
   {
     eventColor: "#00ff00",
-    eventDate: "2019-08-12",
-    eventDescription: "Ortodont v Celju",
+    eventDate: "2019-11-27",
+    eventDescription: "Srečanje tabornikov na lazah. Tam bomo cel teden",
+    eventEndTime: "13:00",
+    eventStartTime: "12:00",
+    eventTitle: "Taborjenje"
+  },
+  {
+    eventColor: "#0000ff",
+    eventDate: "2019-11-20",
+    eventDescription: "Popravilo odlomljenega zobu",
     eventEndTime: "13:00",
     eventStartTime: "12:00",
     eventTitle: "Ortodont"
+  },
+  {
+    eventColor: "#00fff0",
+    eventDate: "2019-12-16",
+    eventDescription: "Srečanje alumnov fizike FMF",
+    eventEndTime: "13:00",
+    eventStartTime: "12:00",
+    eventTitle: "FMF"
+  },
+  {
+    eventColor: "#f0ff00",
+    eventDate: "2019-11-01",
+    eventDescription: "Predavanje mojega dela za 2019",
+    eventEndTime: "13:00",
+    eventStartTime: "12:00",
+    eventTitle: "Prednovoletno druženje"
   }
 ];
 
-export const createEventReducer = (
+export const manageEventReducer = (
   state = {
     inAddEventDialog: false,
     inEditEventDialog: false,

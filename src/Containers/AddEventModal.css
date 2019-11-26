@@ -1,8 +1,8 @@
 .modal__container {
   width: 50vw;
-  height: 80vh;
+  height: 60vh;
   position: fixed;
-  top: 0vh;
+  top: 20vh;
   left: 25vw;
   background-color: white;
   box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.25),
@@ -36,7 +36,7 @@
 
 .action_handler {
   font-weight: bold;
-  font-size: large;
+  font-size: 1.4vw;
   padding: 1rem;
   margin: 1rem;
 }
@@ -69,20 +69,24 @@
   align-items: center;
 }
 
-.end_input {
+.color_input {
   max-width: 10vw;
   flex: 1;
 }
 
 .time_label {
-  font-size: larger;
+  font-size: 1.2vw;
   color: rgb(139, 16, 155);
   margin-left: 0.8rem;
   margin-right: 0.8rem;
 }
 
 .main_label {
-  font-size: large;
+  font-size: 1.3vw;
   font-weight: bolder;
   color: rgb(139, 16, 155);
+}
+
+.time_input {
+  max-width: 10vw;
 }

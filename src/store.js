@@ -1,9 +1,9 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { logger } from "redux-logger";
-import { viewReducer, createEventReducer } from "./Reducers/reducers";
+import { viewReducer, manageEventReducer } from "./Reducers/reducers";
 
 const store = createStore(
-  combineReducers({ viewReducer, createEventReducer }),
+  combineReducers({ viewReducer, manageEventReducer }),
   applyMiddleware(logger)
 );
 

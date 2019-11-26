@@ -21,7 +21,7 @@ const App = props => {
 const mapStateToProps = state => {
   return {
     view: state.viewReducer,
-    events: state.createEventReducer
+    events: state.manageEventReducer
   };
 };
 const mapDispatchToProps = dispatch => {

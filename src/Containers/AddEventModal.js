@@ -79,7 +79,7 @@ const AddEventModal = props => {
               value={eventDate}
               onChange={handleDate}
               name="date"
-              className="date_input"
+              className="time_input"
               min={currentDate}
               required
             ></input>
@@ -91,7 +91,7 @@ const AddEventModal = props => {
               value={eventStartTime}
               onChange={handleEventStart}
               name="start"
-              className="start_input"
+              className="time_input"
               required
             ></input>
             <label htmlFor="end" className="time_label">
@@ -102,7 +102,7 @@ const AddEventModal = props => {
               value={eventEndTime}
               onChange={handleEventEnd}
               name="end"
-              className="end_input"
+              className="time_input"
               required
             ></input>
           </div>
@@ -115,7 +115,7 @@ const AddEventModal = props => {
               value={eventColor}
               onChange={handleEventColor}
               name="color"
-              className="end_input"
+              className="color_input"
               required
             ></input>
           </div>
@@ -158,7 +158,7 @@ const AddEventModal = props => {
 
 const mapStateToProps = state => {
   return {
-    events: state.createEventReducer
+    events: state.manageEventReducer
   };
 };
 
