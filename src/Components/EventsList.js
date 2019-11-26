@@ -1,7 +1,7 @@
 import React from "react";
 import eventHandler from "../HelperFunctions/eventHandler";
 import EventsInTimeframe from "./EventsInTimeframe";
-import "./EventList.css";
+import "./EventsList.css";
 
 const EventsList = props => {
   // eslint-disable-next-line

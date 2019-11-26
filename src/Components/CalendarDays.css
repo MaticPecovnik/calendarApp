@@ -1,0 +1,39 @@
+.days_container {
+  display: grid;
+  grid-template-columns: 9% 9% 9% 9% 9% 9% 9%;
+  grid-column-gap: 5%;
+  grid-template-areas: "monday tuesday wednesday thursday friday saturday sunday";
+  margin-left: 5%;
+}
+
+.day {
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: rgb(139, 16, 155);
+  text-shadow: 0.5px 0.5px 0.1px black;
+  display: flex;
+  place-content: center;
+}
+
+.monday {
+  grid-area: monday;
+}
+.tuesday {
+  grid-area: tuesday;
+}
+.wednesday {
+  grid-area: wednesday;
+}
+.thursday {
+  grid-area: thursday;
+}
+.friday {
+  grid-area: friday;
+}
+.saturday {
+  grid-area: saturday;
+}
+.sunday {
+  grid-area: sunday;
+  color: black;
+}

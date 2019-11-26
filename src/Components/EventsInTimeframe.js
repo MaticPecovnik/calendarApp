@@ -1,6 +1,6 @@
 import React from "react";
 import "./EventsInTimeframe.css";
-import SingleEvent from "./SingleEvent";
+import SingleEvent from "../Containers/SingleEvent";
 
 const EventsInTimeframe = ({ events, noEvents, timeframe }) => {
   return (

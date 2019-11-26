@@ -1,12 +1,14 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { logger } from "redux-logger";
-import { viewReducer, manageEventReducer } from "./Reducers/reducers";
+import {
+  viewReducer,
+  manageEventReducer,
+  calendarMonthReducer
+} from "./Reducers/reducers";
 
 const store = createStore(
-  combineReducers({ viewReducer, manageEventReducer }),
+  combineReducers({ viewReducer, manageEventReducer, calendarMonthReducer }),
   applyMiddleware(logger)
 );
-
-//store.subscribe(() => console.log(store.getState()));
 
 export default store;

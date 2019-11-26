@@ -3,7 +3,7 @@ import React from "react";
 import "./App.css";
 import Header from "./Containers/Header";
 import Event from "./Containers/Event";
-import CalendarView from "./Components/CalendarView";
+import CalendarView from "./Containers/CalendarView";
 
 import { EVENT_VIEW, CALENDAR_VIEW } from "./Reducers/types";
 import { connect } from "react-redux";

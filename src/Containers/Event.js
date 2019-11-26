@@ -16,8 +16,8 @@ const Event = props => {
         </button>
       </div>
 
-      {props.events.inAddEventDialog && <Backdrop />}
-      {props.events.inAddEventDialog && <AddEventModal />}
+      {props.events.inManageEventDialog && <Backdrop />}
+      {props.events.inManageEventDialog && <AddEventModal />}
     </React.Fragment>
   );
 };

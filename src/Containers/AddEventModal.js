@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./AddEventModal.css";
 import getDate from "../HelperFunctions/getDate";
 
@@ -13,7 +13,22 @@ const AddEventModal = props => {
   const [eventStartTime, setEventStartTime] = useState("");
   const [eventEndTime, setEventEndTime] = useState("");
   const [eventColor, setEventColor] = useState("#ff0000");
+  const [eventIndex, setEventIndex] = useState(0);
   const currentDate = getDate(new Date());
+
+  useEffect(() => {
+    if (props.editedEvent !== {} && props.editedEvent !== undefined) {
+      setEventTitle(props.editedEvent.eventTitle);
+      setEventDescription(props.editedEvent.eventDescription);
+      setEventDate(props.editedEvent.eventDate);
+      setEventStartTime(props.editedEvent.eventStartTime);
+      setEventEndTime(props.editedEvent.eventEndTime);
+      setEventColor(props.editedEvent.eventColor);
+      setEventIndex(props.editedEvent.eventIndex);
+    } else if (props.editedEvent === {} || props.editedEvent === undefined) {
+      setEventIndex(props.events.events.length);
+    }
+  }, [props.editedEvent, props.events.events.length]);
 
   const handleTitle = event => {
     setEventTitle(event.target.value);
@@ -141,7 +156,8 @@ const AddEventModal = props => {
                 eventDate,
                 eventStartTime,
                 eventEndTime,
-                eventColor
+                eventColor,
+                eventIndex
               });
             }}
           >

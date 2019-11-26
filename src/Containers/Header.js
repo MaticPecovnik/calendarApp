@@ -5,8 +5,6 @@ import { EVENT_VIEW, CALENDAR_VIEW } from "../Reducers/types";
 import { connect } from "react-redux";
 
 const Header = props => {
-  console.log(document.getElementsByClassName("header"));
-
   return (
     <div className="header">
       <div className="header_title__container">
