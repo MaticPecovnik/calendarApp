@@ -1,10 +1,16 @@
 .day__container {
   width: calc(100% / 7);
   font-weight: bold;
+  font-size: 1vw;
   height: 9vh;
   border: 1px solid black;
 }
 
 .dimmed {
   background-color: rgba(0, 0, 0, 0.13);
+}
+
+.calendar_event {
+  font-size: 1vw;
+  width: 80%;
 }

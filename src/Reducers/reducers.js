@@ -34,53 +34,7 @@ export const viewReducer = (
 
 // Reducer for handling event creation interaction
 
-const initial_events = [
-  {
-    eventIndex: 0,
-    eventColor: "#ff0000",
-    eventDate: "2019-12-12",
-    eventDescription: "Zobozdravnik v Celju",
-    eventEndTime: "13:00",
-    eventStartTime: "12:00",
-    eventTitle: "Zobozdravnik"
-  },
-  {
-    eventIndex: 1,
-    eventColor: "#00ff00",
-    eventDate: "2019-11-27",
-    eventDescription: "Srečanje tabornikov na lazah. Tam bomo cel teden",
-    eventEndTime: "13:00",
-    eventStartTime: "12:00",
-    eventTitle: "Taborjenje"
-  },
-  {
-    eventIndex: 2,
-    eventColor: "#0000ff",
-    eventDate: "2019-11-20",
-    eventDescription: "Popravilo odlomljenega zobu",
-    eventEndTime: "13:00",
-    eventStartTime: "12:00",
-    eventTitle: "Ortodont"
-  },
-  {
-    eventIndex: 3,
-    eventColor: "#00fff0",
-    eventDate: "2019-12-16",
-    eventDescription: "Srečanje alumnov fizike FMF",
-    eventEndTime: "13:00",
-    eventStartTime: "12:00",
-    eventTitle: "FMF"
-  },
-  {
-    eventIndex: 4,
-    eventColor: "#f0ff00",
-    eventDate: "2019-11-01",
-    eventDescription: "Predavanje mojega dela za 2019",
-    eventEndTime: "13:00",
-    eventStartTime: "12:00",
-    eventTitle: "Prednovoletno druženje"
-  }
-];
+const initial_events = [];
 
 export const manageEventReducer = (
   state = {
