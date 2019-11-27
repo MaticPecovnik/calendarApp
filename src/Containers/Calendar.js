@@ -1,6 +1,7 @@
 import React from "react";
 import "./Calendar.css";
 import CalendarDays from "../Components/CalendarDays";
+import CalendarDayCards from "../Components/CalendarDayCards";
 
 import { connect } from "react-redux";
 import { MONTH_BACK, MONTH_FORWARD } from "../Reducers/types";
@@ -40,6 +41,11 @@ const Calendar = props => {
       </div>
       <div className="calendar">
         <CalendarDays />
+        <CalendarDayCards
+          currentMonth={props.month.currentMonth}
+          currentYear={props.month.currentYear}
+          events={props.events.events}
+        />
       </div>
     </React.Fragment>
   );
@@ -47,7 +53,8 @@ const Calendar = props => {
 
 const mapStateToProps = state => {
   return {
-    month: state.calendarMonthReducer
+    month: state.calendarMonthReducer,
+    events: state.manageEventReducer
   };
 };
 

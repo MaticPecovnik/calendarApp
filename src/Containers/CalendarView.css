@@ -10,16 +10,16 @@
 
 .calendar__container {
   grid-area: calendar;
-  margin-left: 1.33%;
+  margin-left: 1%;
   position: fixed;
-  background-color: rgba(65, 65, 65, 0.15);
+  border: 1px solid rgb(139, 16, 155);
   width: 65%;
-  height: 77vh;
   top: 17vh;
+  padding: 0.5vw;
 }
 
 .next_events__container {
   grid-area: events;
   position: relative;
-  margin-top: 7vw;
+  margin-top: 5vw;
 }
